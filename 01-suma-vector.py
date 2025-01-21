@@ -1,19 +1,15 @@
-# 1 - Escriba una función que sume todos los elementos de un arreglo de tipo int. ​
+# Ejercicio 1 - Escriba una función que sume todos los elementos de un arreglo de tipo int.
+def suma_elementos(arreglo):
+    suma = 0
+    for num in arreglo:
+        suma += num
+    return suma
 
-def suma_componentes(vector):
-    # Caso base: vector vacío
-    if vector == []:
-        return 0    
-    # Caso recursivo: sumar primer elemento y llamar recursivamente
-    return vector[0] + suma_componentes(vector[1:])
-
-# Solicitar entrada del usuario y convertir a lista de enteros
-input = list(
+# Solicitar entrada del usuario y convertirla a una lista de enteros
+resultado = list(
     map(
-        int, input("Ingrese los números del vector separados por espacios: ").split()
+        int, input("Ingrese los números del vector, separados por espacios: ").split()
     )
-) 
+)
 
-# Llamar la función y mostrar el resultado
-print("La suma de los componentes del vector es: ", suma_componentes(input))
-
+print("La suma de los elementos del vector es: " + str(suma_elementos(resultado)))
