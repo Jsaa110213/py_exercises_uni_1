@@ -1,0 +1,1 @@
+# Ejericio 6 .- Transponer una matriz (intercambiar filas por columnas).
